@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EAEAEA;
+}
+
+nav{
+    background-color: #00ABB3;
+    position: sticky;
+    top:0px;
+}
+
+header{
+    display: inline;
+}
+
+.flexNavWeb{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown{
+    display:flex;
+    flex-direction: column;
+}
+
+.dropdownItems{
+    display:none;
+    position: absolute;
+    z-index: 1;
+
+    top:47px;
+    background-color: #00ABB3;
+}
+
+nav a{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #EAEAEA;
+    font-size: 16px;
+    text-align: left;
+}
+
+nav a:hover{
+    background-color: #3C4048;
+    color:#EAEAEA;
+}
+
+.dropdown:hover .dropdownItems{
+    display:flex;
+    flex-direction: column;
+}
+
+.jumbotron{
+    background-color: #3C4048;
+    padding: 60px;
+    text-align: left;
+    color:#EAEAEA;
+    font-size: 18px;
+}
+h2,h3,h4{
+    color: #3C4048;
+    margin-top: 10px;
+}
+h2{
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.pictureBoxPotrait{
+    background-color: white;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #2C3333;
+    border-radius: 5px;
+}
+
+.potrait{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+article{
+    width: 80%;
+    background-color: #B2B2B2;
+    border-radius: 10px;
+    box-shadow: 1px,1px,3px,3px, rgba(2,2,2,0.2);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer{
+    width:100%;
+    background-color: #3C4048;
+    text-align: center;
+    padding: 15px;
+    color: #EAEAEA;
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    flex-grow: 1;
+}
+
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 0 5px;
+}
+tr:nth-child(even){
+    background-color: #EAEAEA;
+}
+
+blockquote > p{
+    display: inline;
+}
+
+blockquote::before,
+blockquote::after{
+    content:'"';
+    font-size: 150%;
+    line-height: .7;
+}
+
+blockquote{
+    padding: 30px;
+
+}
+
+.pictureBoxLandscape{
+    background-color: white;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #2C3333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pictureBoxLandscape,
+.pictureBoxPotrait{
+    margin: 20px auto 0 auto;
+}
+
+.profilSpecial{
+    margin: auto
+}
+.landscape{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+table{
+    margin-left: 20px;
+}
+
+.biodata,
+.biodata th,
+.biodata td{
+    border: none;
+    padding: 5px 5px;
+}
+
+aside{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.biodata{
+    margin: auto;
+}
+
+.formInput label,
+.formInput input{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#calculate{
+    background-color: #00ABB3;
+    color: #EAEAEA;
+    border: none;
+    padding: 10px 20px;
+    font-size: 100%;
+}
+
+#calculate:hover{
+    background-color: #3C4048;
+}
+
+input[type=number]{
+    font-size: 100%;
+    padding: 5px;
+}
+
+.rumus, .menghitungGayaContainer{
+    font-size: 120%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #2C3333;
+    border-radius: 5px;
+}
+
+#avatar{
+    border: 1px solid black;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined{
+    vertical-align: top;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.flexNavMobile, #navHamburgerMenu, #selectedNav{
+    display:none;
+}
+
+.dropdownHamburger{
+    display: none;
+    background-color: #00ABB3;
+    position:absolute;
+    top: 47px;
+    width: 100%;
+}
+.dropdownBiografi{
+    display: none;
+}
+
+.menghitungGayaContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menghitungGayaContainer label{
+    font-weight: bold;
+}
+
+#hasil{
+    font-weight: bold;
+}
+
+#hasil, #formHitungGaya{
+    flex-basis: 30%;
+}
+
+@media screen and (max-width:900px){
+    .container, .menghitungGayaContainer{
+        flex-direction: column;
+    }
+    .box{
+        width:100%;
+    }
+    table{
+        margin:20px auto;
+    }
+    .pictureBoxPotrait,
+    .pictureBoxLandscape{
+        width: 100%;
+    }
+    .pictureBoxPotrait{
+        max-width: 300px;
+    }
+
+    /*menghilangkan menu nav untuk ditempatkan ke hamburger*/
+    .flexNavWeb a{
+        display: none;
+    }
+
+    .flexNavMobile{
+        display: flex;
+    }
+
+    .flexNavMobile a#navHamburgerMenu, .flexNavMobile a#selectedNav{
+        display:inline;
+    }
+
+    .flexNavMobile a#navHamburgerMenu{
+        margin-left: auto;
+    }
+
+    .flexNavWeb{
+        justify-content: flex-end;
+    }
+
+    .dropdownHamburger.clicked{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdownHamburger a{
+        display: block;
+    }
+
+    .dropdownBiografi.clicked{
+        display:block;
+    }
+    .dropdownBiografi a{
+        padding-left: 48px;
+    }
+
+    #biografiSpecial{
+        display: flex;
+        justify-content: space-between;
+    }
+    #moreIcon{
+        margin-left: auto;
+        vertical-align: center;
+    }
+
+    /*menampilkan menu ketika hamburger di tap di javascript
+    .flexNavWeb.responsive{
+        flex-direction: column;
+        background-color: #00ABB3;
+    }
+    .flexNavWeb.responsive a#navHamburgerMenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .flexNavWeb.responsive a{
+        text-align: left;
+        display: block;
+    }
+
+    .dropdown:hover .dropdownItems{
+        display:none;
+    }
+    */
+}

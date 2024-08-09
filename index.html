@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="preconnect" href="https://fonts.googleapis.com"/>
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"/>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+         
+         <link rel="stylesheet" href="Assets/Styles/style.css"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+          <header>
+               <div class="jumbotron">
+                    <h1>Sir Issac Newton</h1>
+                    <p id="shortDescription">Sir Isaac Newton (25 Desember 1642 - 20 Maret 1726/27) adalah seorang fisikawan, matematikawan, ahli astronomi, filsuf alam, alkimiawan, teolog dan penulis Inggris yang secara luas diakui sebagai 
+                         salah satu matematikawan, fisikawan terbesar, dan ilmuwan paling berpengaruh sepanjang masa. Dia merupakan pengikut aliran heliosentris dan ilmuwan yang sangat berpengaruh sepanjang sejarah, 
+                         bahkan dikatakan sebagai bapak ilmu fisika klasik</p>
+               </div>
+               <nav>
+                    <div class="flexNavWeb">
+                         <a href="#profil">Profil</a>
+                         <div class="dropdown">
+                              <a id="biografiNav">Biografi<span class="material-symbols-outlined">expand_more</span></a>
+                              <div class="dropdownItems">
+                                   <a href="#masaAwal">Masa awal</a>
+                                   <a href="#masaDewasa">Masa dewasa</a>
+                                   <a href="#masaTua">Masa tua</a>
+                              </div>
+                         </div>
+                         <a href="#hukumNewton">Hukum Newton</a>
+                         <a href="#menghitungGaya">Menghitung Gaya</a>
+                    </div>
+                    <div class="flexNavMobile">
+                         <a id="selectedNav"></a>
+                         <a id="navHamburgerMenu"><span class="material-symbols-outlined">menu</span></a>
+                         <div class="dropdownHamburger" id="dropdownHamburger">
+                              <a href="#profil">Profil</a>
+                              <a id="biografiSpecial">Biografi <span class="material-symbols-outlined" id="moreIcon">expand_more</span></a>
+                              <div class="dropdownBiografi" id="dropdownBiografi">
+                                   <a href="#masaAwal">Masa awal</a>
+                                   <a href="#masaDewasa">Masa dewasa</a>
+                                   <a href="#masaTua">Masa tua</a>
+                              </div>
+                              <a href="#hukumNewton">Hukum Newton</a>
+                              <a href="#menghitungGaya">Menghitung Gaya</a>
+                         </div>
+                    </div>
+               </nav>
+          </header>
+          <main>
+               <article>
+                    <h2 id="profil">Profil</h2>
+                    <div class="container">
+                         <figure class="pictureBoxPotrait box profilSpecial">
+                              <img src="Assets/Images/Issac Newton 1689.jpg" alt="Lukisan issac Newton umur 46 tahun Karya Godfrey Kneller tahun 1689" class="potrait"/>
+                              <figcaption>Lukisan issac Newton umur 46 tahun Karya <cite><a href="https://id.wikipedia.org/wiki/Godfrey_Kneller">Godfrey Kneller</a></cite> tahun 1689</figcaption>
+                         </figure>
+                         <table class="box">
+                              <tr>
+                                   <th>Lahir:</th>
+                                   <td>4 Januari 1643 [K.J. 25 Desember 1642] Woolsthorpe, Lincolnshire, Inggris</td>
+                              </tr>
+                              <tr>
+                                   <th>Meninggal:</th>
+                                   <td>31 Maret 1727 (umur 84) [K.J. 20 Maret 1726] Kensington, Middlesex, Inggris</td>
+                              </tr>
+                              <tr>
+                                   <th>Makam:</th>
+                                   <td>Westminster Abbey</td>
+                              </tr>
+                              <tr>
+                                   <th>Kebangsaan:</th>
+                                   <td>Inggris</td>
+                              </tr>
+                              <tr>
+                                   <th>Almamater:</th>
+                                   <td>Trinity College, Cambridge</td>
+                              </tr>
+                              <tr>
+                                   <th>Dikenal atas:</th>
+                                   <td>	Mekanika Newton, Gravitasi universal, Kalkulus, Hukum gerak Newton, Optika, Deret binomial, Principia, Metode Newton</td>
+                              </tr>
+                              <tr>
+                                   <th>Penghargaan:</th>
+                                   <td>FRS, Knight Bachelor</td>
+                              </tr>
+                              <tr>
+                                   <th colspan="2">Karir Ilmiah</th>
+                              </tr>
+                              <tr>
+                                   <th>Bidang:</th>
+                                   <td>Fisika, Filsafat alam, Alkimia, Teologi, Matematika, Astronomi, Ekonomi</td>
+                              </tr>
+                              <tr>
+                                   <th>Institusi:</th>
+                                   <td>University of Cambridge, Royal Society, Royal Mint</td>
+                              </tr>
+                              <tr>
+                                   <th>Pembimbing akademik:</th>
+                                   <td>Issac Barrow, Benjamin Pulleyn</td>
+                              </tr>
+                              <tr>
+                                   <th>Mahasiswa ternama:</th>
+                                   <td>Roger Cotes, William Whiston</td>
+                              </tr>
+                         </table>
+                    </div>
+               </article>
+               <article>
+                    <h2 id="biografi">Biografi</h2>
+                    <hr/>
+                    <section>
+                         <h3 id="masaAwal">Masa awal</h3>
+                         <p>Isaac Newton dilahirkan pada tanggal 4 Januari 1643 [KJ: 25 Desember 1642] di Woolsthorpe-by-Colsterworth, sebuah hamlet (desa) di county Lincolnshire. 
+                              Pada saat kelahirannya, Inggris masih mengadopsi kalender Julian, sehingga hari kelahirannya dicatat sebagai 25 Desember 1642 pada hari Natal. Ayahnya 
+                              yang juga bernama Isaac Newton meninggal tiga bulan sebelum kelahiran Newton. Newton dilahirkan secara prematur; dilaporkan pula ibunya, Hannah Ayscough, 
+                              pernah berkata bahwa ia dapat muat ke dalam sebuah cangkir (≈ 1,1 liter). Ketika Newton berumur tiga tahun, ibunya menikah kembali dan meninggalkan Newton 
+                              di bawah asuhan neneknya, Margery Ayscough. Newton muda tidak menyukai ayah tirinya dan menyimpan rasa benci terhadap ibunya karena menikahi pria tersebut, 
+                              seperti yang tersingkap dalam pengakuan dosanya: "Threatening my father and mother Smith to burn them and the house over them."</p>
+                         <p>Berdasarkan pernyataan E.T. Bell (1937, Simon and Schuster) dan H. Eves:</p>
+                         <blockquote>
+                              <p>Newton memulai sekolah saat tinggal bersama neneknya di desa dan kemudian dikirimkan ke sekolah bahasa di daerah Grantham dimana dia akhirnya menjadi anak 
+                                   terpandai di sekolahnya. Saat bersekolah di Grantham dia tinggal di-kost milik apoteker lokal yang bernama William Clarke. Sebelum meneruskan kuliah di 
+                                   Universitas Cambridge pada usia 19, Newton sempat menjalin kasih dengan adik angkat William Clarke, Anne Storer. Saat Newton memfokuskan dirinya pada pelajaran, 
+                                   kisah cintanya dengan menjadi semakin tidak menentu dan akhirnya Storer menikahi orang lain. Banyak yang menegatakan bahwa dia, Newton, selalu mengenang kisah 
+                                   cintanya walaupun selanjutnya tidak pernah disebutkan Newton memiliki seorang kekasih dan bahkan pernah menikah.</p>
+                         </blockquote>
+                         <p>Sejak usia 12 hingga 17 tahun, Newton mengenyam pendidikan di sekolah The King's School yang terletak di Grantham (tanda tangannya masih terdapat di perpustakaan sekolah). 
+                              Keluarganya mengeluarkan Newton dari sekolah dengan alasan agar dia menjadi petani saja, bagaimanapun Newton tidak menyukai pekerjaan barunya. Kepala sekolah King's School 
+                              kemudian meyakinkan ibunya untuk mengirim Newton kembali ke sekolah sehingga ia dapat menamatkan pendidikannya. Newton dapat menamatkan sekolah pada usia 18 tahun dengan nilai 
+                              yang memuaskan.</p>
+                         <p>Pada Juni 1661, Newton diterima di Trinity College Universitas Cambridge sebagai seorang sizar (mahasiswa yang belajar sambil bekerja). Pada saat itu, ajaran universitas 
+                              didasarkan pada ajaran Aristoteles, namun Newton lebih memilih untuk membaca gagasan-gagasan filsuf modern yang lebih maju seperti Descartes dan astronom seperti Copernicus, 
+                              Galileo, dan Kepler. Pada tahun 1665, ia menemukan teorema binomial umum dan mulai mengembangkan teori matematika yang pada akhirnya berkembang menjadi kalkulus. Segera 
+                              setelah Newton mendapatkan gelarnya pada Agustus 1665, Universitas Cambridge ditutup oleh karena adanya Wabah Besar. Walaupun dalam studinya di Cambridge biasa-biasa saja, 
+                              studi privat yang dilakukannya di rumahnya di Woolsthorpe selama dua tahun mendorongnya mengembangkan teori kalkulus, optika, dan hukum gravitasi. Pada tahun 1667, ia kembali 
+                              ke Cambridge sebagai pengajar di Trinity.</p>
+                         <figure class="pictureBoxLandscape">
+                              <img src="Assets/Images/Newton Family House.jpg" alt="Rumah Tinggal Keluarga Newton, Tempat Lahirnya Issac Newton" class="landscape"/>
+                              <figcaption>Rumah Keluarga Newton, Tempat Lahir Issac Newton</figcaption>
+                         </figure>
+                    </section>
+                    <hr/>
+                    <section>
+                         <h3 id="masaDewasa">Masa dewasa</h3>
+                         <h4>Matematika</h4>
+                         <p>Kebanyakan ahli sejarah percaya bahwa Newton dan Leibniz mengembangkan kalkulus secara terpisah. Keduanya pula menggunakan notasi matematika yang berbeda pula. Menurut 
+                              teman-teman dekat Newton, Newton telah menyelesaikan karyanya bertahun-tahun sebelum Leibniz, namun tidak mempublikasikannya sampai dengan tahun 1693. Dia baru menjelaskannya 
+                              secara penuh pada tahun 1704, manakala pada tahun 1684, Leibniz sudah mulai mempublikasikan penjelasan penuh atas karyanya. Notasi dan "metode diferensial" Leibniz secara 
+                              universal diadopsi di Daratan Eropa, sedangkan Kerajaan Britania baru mengadopsinya setelah tahun 1820.</p>
+                         <p>Dalam buku catatan Leibniz, dapat ditemukan adanya gagasan-gagasan sistematis yang memperlihatkan bagaimana Leibniz mengembangkan kalkulusnya dari awal sampai akhir, manakala 
+                              pada catatan Newton hanya dapat ditemukan hasil akhirnya saja. Newton mengklaim bahwa ia enggan mempublikasi kalkulusnya karena takut ditertawakan. Newton juga memiliki 
+                              hubungan dekat dengan matematikawan Swiss Nicolas Fatio de Duillier. Pada tahun 1691, Duillier merencanakan untuk mempersiapkan versi baru buku Philosophiae Naturalis Principia 
+                              Mathematica Newton, namun tidak pernah menyelesaikannya. Pada tahun 1693 pula hubungan antara keduanya menjadi tidak sedekat sebelumnya. Pada saat yang sama, Duillier saling 
+                              bertukar surat dengan Leibniz.</p>
+                         <p>Pada tahun 1699, anggota-anggota Royal Society mulai menuduh Leibniz menjiplak karya Newton. Perselisihan ini memuncak pada tahun 1711. Royal Society kemudian dalam suatu 
+                              kajian memutuskan bahwa Newtonlah penemu sebenarnya dan mencap Leibniz sebagai penjiplak. Kajian ini kemudian diragukan karena setelahnya ditemukan bahwa Newton sendiri 
+                              yang menulis kata akhir kesimpulan laporan kajian ini. Sejak itulah bermulainya perselisihan sengit antara Newton dengan Leibniz. Perselisihan ini berakhir sepeninggal 
+                              Leibniz pada tahun 1716.</p>
+                         <p>Newton umumnya diakui sebagai penemu teorema binomial umum yang berlaku untuk semua eksponen. Ia juga menemukan identitas Newton, metode Newton, mengklasifikasikan kurva 
+                              bidang kubik, memberikan kontribusi yang substansial pada teori beda hingga, dan merupakan yang pertama untuk menggunakan pangkat berpecahan serta menerapkan geometri 
+                              koordinat untuk menurunkan penyelesaian persamaan Diophantus.</p>
+                         <p>Ia dipilih untuk menduduki jabatan Lucasian Professor of Mathematics pada tahun 1669. Pada saat itu, para pengajar Cambridge ataupun pengajar Oxford haruslah seorang pastor 
+                              Anglikan yang telah ditahbiskan. Namun, jabatan profesor Lucasian mengharuskan pula pejabatnya tidak aktif dalam gereja. Oleh karena itu, Newton berargumen bahwa ia seharusnyalah 
+                              dibebaskan dari keharusan penahbisan. Raja Charles II menerima argumen ini dan memberikan persetujuan, sehingga konflik antara pandangan keagamaan Newton dengan gereja Anglikan 
+                              dapat dihindari.</p>
+                         <h4>Optika</h4>
+                         <p>Dari tahun 1670 sampai dengan 1672, Newton mengajar bidang optika. Semasa periode ini, ia menginvestigasi refraksi cahaya, menunjukkan bahwa kaca prisma dapat membagi-bagi 
+                              cahaya putih menjadi berbagai spektrum warna, serta lensa dan prisma keduanya akan menggabungkan kembali cahaya-cahaya tersebut menjadi cahaya putih.</p>
+                         <p>Dia juga menunjukkan bahwa cahaya berwarna tidak mengubah sifat-sifatnya dengan memisahkan berkas berwarna dan menyorotkannya ke berbagai objek. Newton mencatat bahwa tidak 
+                              peduli apakah berkas cahaya tersebut dipantulkan, dihamburkan atau ditransmisikan, warna berkas cahaya tidak berubah. Dengan demikian dia mengamati bahwa warna adalah 
+                              interaksi objek dengan cahaya yang sudah berwarna, dan objek tidak menciptakan warna itu sendiri. Ini dikenal sebagai teori warna Newton</p>
+                         <p>Dari usahanya ini dia menyimpulkan bahwa lensa teleskop refraksi akan mengalami gangguan akibat dispersi cahaya menjadi berbagai warna (aberasi kromatik). Sebagai bukti 
+                              konsep ini dia membangun teleskop menggunakan cermin sebagai objektif untuk mengakali masalah tersebut. Pengerjaan rancangan ini, teleskop refleksi fungsional pertama yang 
+                              dikenal, yang sekarang disebut sebagai teleskop Newton melibatkan pemecahan masalah bagaimana menemukan bahan cermin yang cocok serta teknik pembentukannya. Newton menggosok 
+                              cerminnya sendiri dari komposisi khusus logam spekulum yang sangat reflektif, menggunakan cincin Newton untuk menilai mutu optika teleskopnya. Pada akhir 1668 dia berhasil 
+                              memproduksi teleskop pantul pertamanya. Pada tahun 1671 Royal Society meminta demonstrasi teleskop pantulnya. Minat mereka mendorongnya untuk menerbitkan catatannya, 
+                              On Colour (Tentang Warna), yang kemudian dikembangkannya menjadi Opticks.</p>
+                         <p>Ketika Robert Hooke mengkritik beberapa gagasan Newton, dia begitu tersinggung sehingga dia menarik diri dari depan publik. Newton dan Hooke berkomunikasi singkat pada 
+                              tahun 1679-1680, ketika Hooke, yang ditunjuk untuk mengelola korespondensi Royal Society, menulis surat yang dimaksudkan untuk memperoleh sumbangan dari Newton untuk 
+                              penerbitan Royal Society,[22] yang mendorong Newton untuk menyelesaikan bukti bahwa orbit elips planet merupakan hasil dari gaya sentripetal yang berbanding terbalik 
+                              dengan kuadrat vektor jari-jari (lihat hukum gravitasi Newton) dan De motu corporum in gyrum). Namun hubungan kedua ilmuwan tersebut umumnya tetap buruk sampai saat 
+                              kematian Hooke.</p>
+                         <p>Newton berargumen bahwa cahaya terdiri dari partikel atau corpuscles, yang direfraksikan dengan percepatan ke dalam medium yang lebih rapat. Dia condong kepada teori 
+                              gelombang seperti suara untuk menerangkan pola berulang pemantulan dan transmisi oleh film tipis (Opticks Bk.II, Props. 12), tapi masih mempertahankan teori 'fits' 
+                              yang menentukan apakah corpuscles dipantulkan atau diteruskan. Para fisikawan kemudian lebih menyukai teori gelombang murni untuk cahaya untu menjelaskan pola interferensi, 
+                              dan fenomena umum difraksi. Mekanika kuantum, foton, dan dualisme gelombang-partikel dewasa ini hanya memiliki kemiripan sedikit saja dengan pemahaman Newton terhadap 
+                              cahaya.</p>
+                         <p>Dalam Hypothesis of Light yang terbit pada tahun 1675, Newton mendalilkan keberadaan eter untuk menghantarkan gaya antarpartikel. Kontak dengan Henry More, seorang teosofis, 
+                              membangkitkan minatnya dalam alkimia. Dia mengganti eter dengan gaya gaib yang didasarkan pada gagasan hermetis tentang gaya tarik dan tolak antara partikel. John Maynard 
+                              Keynes, yang memperoleh banyak tulisan Newton tentang alkimia, menyatakan bahwa "Newton bukanlah orang pertama dari Abad Pencerahan (Age of Reason): dia adalah ahli sihir 
+                              terakhir." Minat Newton dalam alkimia tidak dapat dipisahkan dari sumbangannya terhadap ilmu pengetahuan; namun tampaknya dia memang meninggalkan penelitian 
+                              alkimianya. (Ini adalah ketika tidak ada perbedaan yang jelas antara alkimia dan sains). Bila saja dia tidak mengandalkan gagasan gaib aksi pada suatu jarak, dalam ruang 
+                              hampa, dia mungkin tidak akan mengembangkan teori gravitasinya. (Lihat pula studi ilmu gaib Isaac Newton).</p>
+                         <p>Pada tahun 1704 Newton menerbitkan Opticks, yang menguraikan secara terperinci teori korpuskular tentang cahaya. Dia menganggap cahaya terbuat partikel-partikel (corpuscles) 
+                              yang sangat halus, bahwa materi biasa terdiri dari partikel yang lebih kasar, dan berspekulasi bahwa melalui sejenis transmutasi alkimia "mungkinkah benda kasar dan cahaya 
+                              dapat berubah dari satu bentuk ke bentuk yang lain, ... dan mungkinkah benda-benda menerima aktivitasnya dari partikel cahaya yang memasuki komposisinya?" ("Are not gross 
+                              Bodies and Light convertible into one another, ...and may not Bodies receive much of their Activity from the Particles of Light which enter their Composition?" 
+                              (Newton juga membangun bentuk primitif generator elektrostatik gesek, menggunakan bulatan gelas (Optics, 8th Query).</p>
+                         <p>Di dalam artikel berjudul "Newton, prisms and the 'opticks' of tunable lasers diindikasikan bahwa Newton dalam bukunya Opticks adalah yang pertama kali menunjukkan diagram 
+                              penggunaan prisma sebagai pengekspansi berkas cahaya. Dalam buku yang sama dia memerikan, lewat diagram, penggunaan susunan prisma berganda. Sekitar 278 tahun setelah diskusi 
+                              oleh Newton, pengekspansi prisma berganda menjadi pokok dari pengembangan laser tertalakan lebargaris sempit. Penggunaan prisma pengekspansi berkas ini berakibat terhadap 
+                              pengembangan teori dispersi prisma berganda.</p>
+                         <h4>Mekanika</h4>
+                         <p>Pada tahun 1679 Newton kembali mengerjakan mekanika benda langit, yaitu gravitasi dan efeknya terhadap orbit planet-planet, dengan Referensi terhadap hukum Kepler tentang gerak 
+                              planet. Ini dirangsang oleh pertukaran surat singkat pada masa 1679-80 dengan Hooke, yang telah ditunjuk untuk mengelola korespondensi Royal Society, dan membuka korespondensi 
+                              yang dimaksudkan untuk meminta sumbangan dari Newton terhadap jurnal ilmiah Royal Society. Bangkitnya kembali ketertarikan Newton terhadap astronomi mendapatkan rangsangan 
+                              lebih lanjut dengan munculnya komet pada musim dingin 1680-1681,yang dibahasnya dalam korespondensi dengan John Flamsteed. Setelah diskusi dengan Hooke, Newton menciptakan bukti 
+                              bahwa bentuk elips orbit planet akan berasal dari gaya sentripetal yang berbanding terbalik dengan kuadrat vektor jari-jari. Newton mengirimkan hasil kerjanya ini ke Edmond 
+                              Halley dan ke Royal Society dalam De motu corporum in gyrum, sebuah risalah yang ditulis dalam 9 halaman yang disalin ke dalam buku register Royal Society pada Desember 1684 
+                              Risalah ini membentuk inti argumen yang kemudian akan dikembangkan dalam Principia.</p>
+                         <p>Principia dipublikasikan pada 5 Juli 1687 dengan dukungan dan bantuan keuangan dari Edmond Halley. Dalam karyanya ini Newton menyatakan hukum gerak Newton yang memungkinkan 
+                              banyak kemajuan dalam revolusi Industri yang kemudian terjadi. Hukum ini tidak direvisi lagi dalam lebih dari 200 tahun kemudian, dan masih merupakan fondasi dari teknologi 
+                              non-relativistik dunia modern. Dia menggunakan kata Latin gravitas (berat) untuk efek yang kemudian dinamakan sebagai gravitasi, dan mendefinisikan hukum gravitasi 
+                              universal.</p>
+                         <p>Dalam karya yang sama, Newton mempresentasikan metode analisis geometri yang mirip dengan kalkulus, dengan 'nisbah pertama dan terakhir', dan menentukan analisis untuk 
+                              menentukan (berdasarkan hukum Boyle) laju bunyi di udara, menentukan kepepatan bentuk sferoid Bumi, memperhitungkan presesi ekuinoks akibat tarikan gravitasi bulan pada 
+                              kepepatan Bumi, memulai studi gravitasi ketidakteraturan gerak Bulan, memberikan teori penentuan orbit komet, dan masih banyak lagi.</p>
+                         <p>Newton memperjelas pandangan heliosentrisnya tentang tata surya, yang dikembangkan dalam bentuk lebih modern, karena pada pertengahan 1680-an dia sudah mengakui Matahari 
+                              tidak tepat berada di pusat gravitasi tata surya Bagi Newton, titik pusat Matahari atau benda langit lainnya tidak dapat dianggap diam, namun seharusnya "titik pusat 
+                              gravitasi bersama Bumi, Matahari dan Planet-planetlah yang harus disebut sebagai Pusat Dunia", dan pusat gravitasi ini "diam atau bergerak beraturan dalam garis lurus". 
+                              Newton mengadopsi pandangan alternatif "tidak bergerak" dengan memperhatikan pandangan umum bahwa pusatnya, di manapun itu, tidak bergerak.</p>
+                         <p>Postulat Newton aksi-pada-suatu-jarak yang tidak terlihat menyebabkan dirinya dikritik karena memperkenalkan "perantara gaib" ke dalam ilmu pengetahuan. Dalam edisi kedua 
+                              Principia (1713) Newton tegas menolak kritik tersebut dalam bagian General Scholium di akhir buku. Dia menulis bahwa cukup menyimpulkan bahwa fenomena tersebut menyiratkan 
+                              tarikan gravitasi, namun hal tersebut tidak menunjukkan sebabnya. Tidak perlu dan tidak layak merumuskan hipotesis hal-hal yang tidak tersirat oleh fenomena itu. Di sini 
+                              Newton menggunakan ungkapannya yang kemudian terkenal, Hypotheses non fingo.</p>
+                         <p>Berkat Principia, Newton diakui dunia internasional Dia mendapatkan lingkaran pengagum, termasuk matematikawan kelahiran Swiss Nicolas Fatio de Duillier, yang menjalin 
+                              hubungan yang intens dengannya sampai 1693, saat hubungan tersebut mendadak berakhir. Pada saat bersamaan Newton menderita gangguan saraf.</p>
+                         <figure class="pictureBoxPotrait">
+                              <img src="Assets/Images/Issac Newton 1702.jpg" alt="Lukisan Issac Newton pada tahun 1702" class="potrait"/>
+                              <figcaption>Issac Newton pada tahun 1702</figcaption>
+                         </figure>
+                    </section>
+                    <hr/>
+                    <section>
+                         <h3 id="masaTua">Masa tua</h3>
+                         <p>Pada dasawarsa 1690-an, Newton menulis sejumlah risalah keagamaan yang membahas penafsiran harfiah Alkitab. Kepercayaan Henry More tentang Alam Semesta dan penolakan dualisme 
+                              Cartesian mungkin telah mempengaruhi gagasan-gagasan keagamaan Newton. Naskah yang dia kirim ke John Locke yang berisi bantahan terhadap eksistensi Trinitas tidak pernah 
+                              diterbitkan. Karya-karya akhirnya, The Chronology of Ancient Kingdoms Amended (1728) dan Observations Upon the Prophecies of Daniel and the Apocalypse of St. John (1733) 
+                              diterbitkan setelah kematiannya. Dia juga mencurahkan waktu cukup banyak untuk studi alkimia.</p>
+                         <p>Newton adalah anggota Parlemen Inggris dari tahun 1689 sampai 1690, dan pada tahun 1701. Namun menurut beberapa laporan komentarnya di parlemen hanyalah keluhan tentang aliran 
+                              udara dingin dalam ruangan dan permintaan agar jendela ditutup.</p>
+                         <p>Newton pindah ke London untuk menempati posisi pengawas Percetakan Uang Logam Kerajaan (Royal Mint) pada tahun 1696, posisi yang didapatkannya berkat dukungan Charles 
+                              Montagu, Earl Pertama Halifax, yang pada saat itu menjabat Chancellor of Exchequer. Dia bertanggung jawab atas pencetakan kembali uang logam Inggris, tugas yang sebenarnya 
+                              tumpang tindih dengan Lord Lucas, Gubernur Menara London. Dia juga mendapatkan pekerjaan deputi pengawas cabang sementara Chester untuk Edmond Halley. Newton menjadi Empu 
+                              Percetakan Uang Logam (Master of Mint) yang paling terkenal setelah kematian Thomas Neale pada tahun 1699, posisi yang tetap dijabatnya sampai akhir hayatnya. Penunjukan 
+                              ini sebenarnya dimaksudkan sebagai pekerjaan ringan, namun Newton memperlakukannya sebagai tugas serius, dan pensiun dari kewajibannya di Cambridge pada tahun 1701, dan 
+                              menggerakkan kekuasaannya untuk mereformasi mata uang dan menghukum pemalsu dan pemotong uang logam.</p>
+                         <p>Sebagai Empu Percetakan Uang Logam pada tahun 1717 Newton memindahkan standar Poundsterling ke standar perak dari standar emas, dengan menentukan hubungan bimetalik antara 
+                              koin emas dan koin perak yang menguntungkan koin emas. Ini menyebabkan koin perak serling dilebur dan dikapalkan ke luar Britania. Newton diangkat sebagai Presiden Royal 
+                              Society pada tahun 1703 dan menjadi rekan dari Akademi Ilmu Pengetahuan Prancis (Académie des Sciences). Pada kedudukannya di Royal Society, Newton menjadi bermusuhan 
+                              dengan John Flamsteed, Astronom Kerajaan, dengan menerbitkan secara prematur karya Flamsteed, Historia Coelestis Britannica, yang telah digunakan oleh Newton dalam 
+                              studinya</p>
+                         <p>Pada April 1705 Ratu Anne mengangkat Newton sebagai Kesatria pada saat kunjungan ke Trinity College, Cambridge. Pengangkatan ini kemungkinan didorong oleh perhitungan politik 
+                              sehubungan dengan pemilihan Parlemen pada bulan Mei 1705, daripada pengakuan karya-karya ilmiah Newton ataupun jasanya sebagai Empu Percetakan Uang Logam. Newton adalah 
+                              ilmuwan kedua yang diangkat sebagai kesatria, setelah Francis Bacon.</p>
+                         <p>Mendekati akhir hayatnya, Newton bertempat tinggal di Cranbury Park, dekat Winchester dengan kemenakan perempuan dan suaminya, sampai wafatnya pada tahun 1727. Newton wafat 
+                              dalam tidurnya di London pada tanggal 31 Maret dan dikebumikan di Westminster Abbey. Kemenakannya Catherine Barton Conduitt, bertindak sebagai tuan rumah pada saat-saat 
+                              urusan sosial di rumhnya di Jermyn Street di London. Dia adalah "pamannya yang sangat penyayang," menurut surat Newton kepada Catherine Barton pada saat kemenakannya 
+                              itu sedang memulihkan diri dari penyakit cacar. Newton yang tetap melajang telah membagi-bagikan sebagian besar harta miliknya kepada sanak keluarganya pada tahun-tahun 
+                              terakhirnya, dan wafat tanpa meninggalkan warisan.</p>
+                         <p>Setelah kematiannya, tubuh Newton ditemukan mengandung sejumlah besar raksa, mungkin sebagai akibat studi alkimianya. Keracunan air raksa dapat menjelaskan keeksentrikan 
+                              Newton di akhir hayatnya.</p>
+                         <figure class="pictureBoxPotrait">
+                              <img src="Assets/Images/Issac Newton 1712.jpg" alt="Lukisan Issac Newton pada usia senja, potret tahun 1712 oleh Sir James Thornhill" class="potrait"/>
+                              <figcaption>Lukisan Issac Newton pada usia senja, potret tahun 1712 oleh <cite><a href="https://en.wikipedia.org/wiki/James_Thornhill">Sir James Thornhill</a></cite></figcaption>
+                         </figure>
+                    </section>
+               </article>
+               <article>
+                    <h2 id="hukumNewton">Hukum Newton</h2>
+                    <p>Hukum Newton merupakan hukum dasar dinamika yang merumuskan pengaruh gaya terhadap perubahan gerak benda. Hukum ini dibuat oleh Issac Newton</p>
+                    <hr/>
+                    <section>
+                         <h3>Hukum Newton I</h3>
+                         <p>Hukum Newton I disebut juga sebagai hukum inersia (kelembaman) berbunyi "Jika resultan gaya pada suatu benda sama dengan nol, maka benda yang mula-mula diam akan terus diam. 
+                              Sedangkan, benda yang mula-mula bergerak, akan terus bergerak dengan kecepatan tetap</p>
+                         <p>Hukum I Newton menyatakan bahwa suatu benda tidak akan bergerak selama gaya yang bekerja padanya adalah nol atau suatu benda yang bergerak lurus akan tetap bergerak jika tidak 
+                              ada gaya lain yang mempengaruhi</p>
+                         <p>Benda yang didorong akan berhenti sendiri karena dipengaruhi karena dipengaruhi oleh gravitasi bumi. Selain itu, gaya yang ditimbulkan oleh bidang yang tidak licin (gaya gesek) 
+                              akan mengurangi gaya yang ada pada benda yang bergerak di bidang kasar. inilah mengapa benda yang didorong akan berhenti sendiri</p>
+                         <div class="rumus">
+                              <p>Hukum Newton I dirumuskan sebagai:</p>
+                              <p>&Sigma; F = 0</p>
+                              <p>Keterangan:</p>
+                              <p>&Sigma;F adalah resultan gaya yang bekerja pada benda (N)</p>
+                         </div>
+                    </section>
+                    <hr/>
+                    <section>
+                         <h3>Hukum Newton II</h3>
+                         <p>Hukum Newton II berbunyi: "Sebuah benda dengan masa m mengalami gaya resultan sebesar F akan mengalami percepatan (a) yang arahnya sama dengan arah gaya, dan besarnya berbanding 
+                              lurus dengan F dan berbanding terbalik terhadap massa (m)"</p>
+                         <p>Setiap benda cenderung mempertahankan keadaannya selama tidak ada resultan gaya yang bekerja benda tersebut. Apa yang terjadi jika resultan gaya yang bekerja pada benda 
+                              tersebut tidak sama dengan nol?</p>
+                         <p>Hasil eksperimen Newton menunjukkan bahwa gaya yang diberikan pada benda akan menyebabkan benda tersebut mengalami perubahan kecepatan</p>
+                         <p>Ketika gaya tersebut searah dengan gerak benda, kecepatannya bertambah dan ketika gaya tersebut berlawanan dengan gerak benda, kecepatannya berkurang</p>
+                         <div class="rumus">
+                              <p>Hukum II newton disebut juga dengan gaya, dapat dirumuskan dalam fungsi matematis sebagai berikut:</p>
+                              <p>F = m.a</p>
+                              <p>Dengan:</p>
+                              <p>F = gaya yang bekerja pada benda (N)</p>
+                              <p>m = adalah massa benda yang diberi gaya (kg)</p>
+                              <p>a = adalah percepatan benda yang diberi gaya (m/s<sup>2</sup>></p>
+                              <p>Bila gaya bekerja lebih dari satu ditulis:</p>
+                              <p>&Sigma; F = &Sigma; m.a</p>
+                         </div>
+                    </section>
+                    <hr/>
+                    <section>
+                         <h3>Hukum Newton III</h3>
+                         <p>Hukum Newton III berbunyi: "Jika benda A mengerjakan gaya pada Benda B, maka benda B akan mengerjakan gaya pada benda A, yang besarnya sama tetapi arahnya berlawanan"</p>
+                         <p>Seorang anak menarik pohon (memberikan gaya pada pohon) dengan menggunakan seutas tali (Faksi) maka tali tersebut akan memberikan gaya (Freaksi) yang sama besar, 
+                              tapi berlawanan arah</p>
+                         <p>Dengan kata lain gaya selalu terjadi berpasangan, dan satu benda tidak dapat memberikan gaya pada benda lain tanpa mengalami gaya itu sendiri. Hukum III Newton 
+                              sering disebut sebagai aksi-reaksi, di mana gaya yang diberikan aksi dan gaya yang dialami sebagai konsenkuensinya adalah reaksi.</p>
+                         <div class="rumus">
+                              <p>Hukum Newton III dapat dirumuskan sebagai:</p>
+                              <p>&Sigma; Faksi = -&Sigma; Freaksi</p>
+                         </div>
+                    </section>
+               </article>
+               <article>
+                    <h2 id="menghitungGaya">Menghitung Gaya</h2>
+                    <div class="menghitungGayaContainer">
+                         <form id="formHitungGaya">
+                              <div class="formInput">
+                                   <label for="mass">Masa:</label><br/>
+                                   <input type="number" id="mass" name="mass"/><br/>
+                                   <label for="acceleration">Percepatan:</label><br/>
+                                   <input type="number" id="acceleration" name="acceleration"/><br/>
+                                   <input type="button" value="calculate" id="calculate"/>
+                              </div>
+                         </form>
+                         <p id="hasil">Hasil:</p>
+                    </div>
+               </article>
+          </main>
+          <aside>
+               <h2>Biodata</h2>
+               <figure>
+                    <img id="avatar" alt="foto profil pembuat halaman web" src="Assets/Images/Foto Pribadi.jpg"/>
+               </figure>
+               <table class="biodata">
+                    <tr>
+                         <th>Nama Lengkap:</th>
+                         <td>Billy Tan</td>
+                    </tr>
+                    <tr>
+                         <th>Username:</th>
+                         <td>dreamingpotato</td>
+                    </tr>
+               </table>
+          </aside>
+
+          <footer>
+               <p>&copy; 2022, Billy</p>
+          </footer>
+          <script src="Assets/Script/hamburgerMenu.js"></script>
+          <script src="Assets/Script/hitungGaya.js"></script>
+    </body>
+</html>
